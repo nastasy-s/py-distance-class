@@ -76,3 +76,7 @@ def __truediv__(self, other: int | float) -> Distance:
 def __truediv__(self, other: int | float | Distance) -> Distance:
     ...
 ```
+
+2. Adding explicit type checking if annotations are correct is not required.
+
+If you use correct type annotations like `other: int | float | Distance`, you don't need to check types explicitly and raise `TypeError`.
